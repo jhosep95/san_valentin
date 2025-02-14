@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor ❤️</title>
+    <link rel="stylesheet" href="maricely.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>💖 Para Ti, Mi Amor 💖</h1>
+        <div id="step1" class="step">
+            <p>Tengo algo muy especial para ti... 💌</p>
+            <button onclick="nextStep(1)">Descúbrelo</button>
+        </div>
+
+        <div id="step2" class="step hidden">
+            <p>Me encontraba buscando por horas una canción que pueda expresar parte de lo que me haces sentir. 💕</p>
+            <p>Mientras la escuchas piensa en nosotros y respóndeme la siguiente pregunta...💕</p>
+            <p>Presiona siguiente para ver la pregunta.💕</p>
+            <button onclick="nextStep(2)">Siguiente</button>
+        </div>
+
+        <div id="step3" class="step hidden">
+            <h2>💘 ¿Quieres ser mi San Valentín? 💘</h2>
+            <button onclick="nextStep(3)">Sí, claro! 😍</button>
+            <button onclick="reject()">No 😢</button>
+        </div>
+
+        <div id="step4" class="step hidden">
+            <h2>¡Gracias por aceptar, me haces la persona más feliz del mundo! 🎉</h2>
+            <p>Te amo muchísimo, Claudia Maricely Tarmeño Sierra (Mi Amor). ❤️</p>
+        </div>
+    </div>
+
+    <audio id="musica-romantica" loop>
+        <source src="Contigo - Calibre 50.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Contenedor de corazones flotantes -->
+    <div id="heart-container"></div>
+
+    <script src="maricely.js"></script>
+</body>
+</html>

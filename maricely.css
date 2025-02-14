@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: 100vh;            /* Ocupa toda la altura de la pantalla */
+    margin: 0;                /* Elimina márgenes */
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff5f7;  /* Color más suave */
+    color: #b31252;  /* Rojo frambuesa */
+    padding: 0;
+    overflow: auto; /* Evita barras de desplazamiento por los corazones */
+    text-align: center;        /* Asegura que el texto también esté centrado */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+button {
+    background-color: #ff4d6d; /* Rojo suave */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #d90429; /* Rojo pasión */
+}
+
+.hidden {
+    display: none;
+}
+
+.step {
+    margin-top: 30px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4081;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Contenedor de corazones */
+#heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* No interfiere con los clics */
+    overflow: hidden;
+}
+
+/* Corazones flotantes */
+.heart {
+    position: absolute;
+    bottom: 0;
+    color: red;
+    font-size: 20px;
+    opacity: 0.8;
+    animation: floatUp 5s linear infinite;
+}
+
+/* Animación de corazones */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+    }
+}
